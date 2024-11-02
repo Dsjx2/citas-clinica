@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Médico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Historial Médico del Paciente</h1>
+        <p>Revise el historial médico y antecedentes del paciente seleccionado.</p>
+    </header>
+
+    <main>
+        <section id="patient-info">
+            <h2>Información del Paciente</h2>
+            <p><strong>Nombre Completo:</strong> Juan Pérez</p>
+            <p><strong>Fecha de Nacimiento:</strong> 10/01/1985</p>
+            <p><strong>Número de Identificación:</strong> 123456</p>
+            <p><strong>Teléfono:</strong> 1234-5678</p>
+        </section>
+
+        <section id="medical-history">
+            <h2>Historial Médico</h2>
+            <table id="history-table">
+                <thead>
+                    <tr>
+                        <th>Fecha de Consulta</th>
+                        <th>Motivo de Consulta</th>
+                        <th>Diagnóstico</th>
+                        <th>Notas del Médico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-01-10</td>
+                        <td>Dolor de cabeza</td>
+                        <td>Cefalea</td>
+                        <td>Se recomienda descanso.</td>
+                    </tr>
+                    <tr>
+                        <td>2024-05-15</td>
+                        <td>Revisión de salud</td>
+                        <td>Sin hallazgos</td>
+                        <td>Paciente en buen estado.</td>
+                    </tr>
+                    <tr>
+                        <td>2024-09-25</td>
+                        <td>Fiebre y tos</td>
+                        <td>Gripe</td>
+                        <td>Prescribir antivirales.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="close-modal" onclick="location.href='../index.html'">Cancelar</button>
+            <div class="error-message" id="error-message"></div>
+        </section>
+    </main>
+
+    <script src="medical-history.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programar Cita Médica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Programar Cita Médica</h1>
+        <p>Seleccione una especialidad, un médico, y elija una fecha y hora disponible para su cita.</p>
+    </header>
+
+    <main>
+        <form id="appointment-form">
+            <div class="form-group">
+                <label for="specialty">Especialidad:</label>
+                <select id="specialty" name="specialty" required>
+                    <option value="">Seleccione una especialidad</option>
+                    <option value="cardiology">Cardiología</option>
+                    <option value="pediatrics">Pediatría</option>
+                    <!-- Agregar más especialidades según sea necesario -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="doctor">Médico:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">Seleccione un médico</option>
+                    <!-- Opciones dinámicas según la especialidad seleccionada -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Fecha de la Cita:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Hora de la Cita:</label>
+                <select id="time" name="time" required>
+                    <option value="">Seleccione una hora</option>
+                    <!-- Opciones dinámicas según la fecha seleccionada -->
+                </select>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit">Confirmar Cita</button>
+                <button type="button" id="cancel-button" onclick="location.href='../index.html'">Cancelar</button>
+            </div>
+
+            <div class="success-message" id="success-message"></div>
+        </form>
+    </main>
+
+    <script src="appointment.js"></script>
+</body>
+
+</html>

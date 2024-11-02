@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordatorio de Citas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Recordatorio de Citas</h1>
+        <p>Gestiona el envío automático de recordatorios para citas médicas programadas.</p>
+    </header>
+
+    <main>
+        <section id="appointments">
+            <h2>Citas Programadas para Mañana</h2>
+            <table id="reminder-table">
+                <thead>
+                    <tr>
+                        <th>Fecha de Cita</th>
+                        <th>Nombre del Paciente</th>
+                        <th>Médico</th>
+                        <th>Especialidad</th>
+                        <th>Método de Notificación</th>
+                        <th>Estado de Envío</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-11-02</td>
+                        <td>Juan Pérez</td>
+                        <td>Dr. López</td>
+                        <td>Medicina General</td>
+                        <td>Correo</td>
+                        <td>Enviado</td>
+                    </tr>
+                    <tr>
+                        <td>2024-11-02</td>
+                        <td>María González</td>
+                        <td>Dr. Ruiz</td>
+                        <td>Pediatría</td>
+                        <td>SMS</td>
+                        <td>Enviado</td>
+                    </tr>
+                    <tr>
+                        <td>2024-11-02</td>
+                        <td>Carlos Martínez</td>
+                        <td>Dr. Fernández</td>
+                        <td>Dermatología</td>
+                        <td>Correo</td>
+                        <td>No enviado</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="error-message" id="error-message"></div>
+            <button id="resend-button">Reenviar Recordatorio</button>
+            <button id="close-modal" onclick="location.href='../index.html'">Cancelar</button>
+        </section>
+    </main>
+
+    <script src="reminder-notifications.js"></script>
+</body>
+
+</html>

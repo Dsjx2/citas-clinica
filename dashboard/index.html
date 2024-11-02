@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración de Citas Médicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Logo de la Clínica</div>
+        <h1>Panel de Administración de Citas Médicas</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Mis Citas</a>
+            <a href="#">Historial Médico</a>
+            <a href="#">Configuración</a>
+            <a href="#">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="greeting">
+            <h2>Bienvenido, [Nombre del Usuario]!</h2>
+        </section>
+
+        <section id="dashboard">
+            <h3>Estadísticas Rápidas</h3>
+            <ul>
+                <li>Total de Pacientes Registrados: 150</li>
+                <li>Total de Citas Programadas: 75</li>
+                <li>Total de Citas Canceladas: 10</li>
+                <li>Citas para Hoy: 5</li>
+            </ul>
+        </section>
+
+        <section id="quick-access">
+            <h3>Accesos Rápidos</h3>
+            <div class="quick-access-buttons">
+                <button onclick="location.href='cu1/index.html'">Registrar Usuario</button>
+                <button onclick="location.href='cu2/index.html'">Programar Cita</button>
+                <button onclick="location.href='cu3/index.html'">Cancelar Cita</button>
+                <button onclick="location.href='cu4/index.html'">Consultar Historial Médico</button>
+                <button onclick="location.href='cu5/index.html'">Enviar Recordatorio de Cita</button>
+            </div>
+        </section>
+
+        <section id="notifications">
+            <h3>Notificaciones</h3>
+            <p>Tienes 3 citas programadas para hoy.</p>
+            <p>Verificar citas canceladas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dirección: Calle Falsa 123, Ciudad</p>
+        <p>Teléfono: 1234-5678 | Correo: contacto@clinica.com</p>
+        <p><a href="#">Preguntas Frecuentes</a> | <a href="#">Contacto Soporte</a></p>
+    </footer>
+</body>
+
+</html>
